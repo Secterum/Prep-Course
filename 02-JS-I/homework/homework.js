@@ -140,7 +140,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return Math.random ;
+  return Math.random ();
 }
 
 function esPositivo(numero) {
@@ -149,8 +149,9 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   if (numero > 0) {return "Es positivo"};
-  if (numero > 0) {return "Es negativo"};
-  if (numero === 0) {return "false"}
+  if (numero < 0) {return "Es negativo"};
+  if (numero === 0 ) {return false}
+  return "Es negativo"
 }
 
 function agregarSimboloExclamacion(str) {
@@ -209,9 +210,11 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  var vocal = letra === a || letra === e || letra === u || letra === i || letra === o  ;
+  var vocal = letra === "a" || letra === "e" || letra === "u" || letra === "i" || letra === "o"  ;
   if (letra.length > 1) {return "Dato incorrecto"}
   if (vocal) {return "Es vocal"};
+  if (letra === vocal) {return "Es vocal"}
+  return "Dato incorrecto"
 }
 
 
