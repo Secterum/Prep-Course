@@ -110,7 +110,7 @@ function numeroMasGrande(numeros) {
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
-  // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
+ // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
  if (arguments.length === 0){
   return 0
@@ -164,14 +164,11 @@ function todosIguales(arreglo) {
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
   let inicial = arreglo[0]
-  for (i = 0;i < arreglo.length ; i++)
+  for (i = 0; i < arreglo.length ; i++)
   {if (inicial !== arreglo[i]) {
     return false
-  }
-  return true
-
-  }
-} 
+  }}
+  return true;} 
 
 
 function mesesDelAño(array) {
@@ -206,14 +203,27 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
-  let array =[]
-  let suma = numero
-  for (i=0; i <10;i++) {
-   suma = suma + 2
-   if (suma === i) break;
-    else {push.bank(suma)} 
-  return "Se interrumpio la ejecucion"}
-}
+  let array = []
+  var suma = numero
+ for (var i = 0; i < 10; i++) {
+   suma = suma + 2;
+   if (suma === i) return "Se interrumpió la ejecución"
+    array.push(suma) 
+  }
+  return array
+ } 
+     
+   
+
+
+  // let array =[]
+  //let suma = suma
+  //for (i=0; i <10;i++) {
+   //suma = suma + 2
+   //if (suma === i) break;
+   // else {array.push (suma)} 
+  //return "Se interrumpio la ejecucion"}
+
 
 
 function continueStatement(numero) {
@@ -223,7 +233,16 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
-  
+  let array = []
+  var suma = numero
+ for (var i = 0; i < 10; i++) {
+  if (i != 5)
+   suma = suma + 2;
+   else continue ;
+    array.push(suma) 
+  }
+  return array
+
 
 }
 
